@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# macOS:
+.DS_Store
+
+# virtual environments:
+venv/
+env/
+
+# VS Code:
+.vscode/
+
+# Node.js
+node_modules/
+
+# Local environment variables
+.env
