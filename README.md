@@ -30,3 +30,5 @@ Make sure you have the following installed:
    ```
 
 2. Open your web browser and go to `http://127.0.0.1:8000/`
+
+### Left off at "Step 5: Serve Vue.js from Django"
