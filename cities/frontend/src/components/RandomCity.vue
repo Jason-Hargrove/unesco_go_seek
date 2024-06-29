@@ -1,4 +1,3 @@
-<
 <template>
   <div class="random-city">
     <button @click="fetchRandomCity" class="btn btn-primary">
@@ -11,7 +10,6 @@
     </div>
   </div>
 </template>
->
 
 <script>
 export default {
