@@ -1,34 +1,45 @@
-# Python bytecode
+# Python
+*.pyc
 __pycache__/
-*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Django stuff:
+# Django
 *.log
 *.pot
 *.pyc
-*.pyo
-*.pyd
-*.sqlite3
-*.db
+__pycache__/
+local_settings.py
+db.sqlite3
+media
 
-# macOS:
-.DS_Store
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# virtual environments:
-venv/
-env/
+# Vue.js
+dist/
 
-# VS Code:
+# VS Code
 .vscode/
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Django Static and Media Files
+staticfiles/
+media/
 
-# Vue.js build output
-cities/frontend/dist/
-
-# Local environment variables
+# Environment Variables
 .env
+
+# macOS
+.DS_Store
+
+# JetBrains
+.idea/
