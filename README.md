@@ -50,9 +50,10 @@ Make sure you have the following installed:
    npm run build
    ```
 
-3. Copy the Build Files to the static Directory:
+3. Copy the Build Files to the "static" Folder in the Root Directory:
    ```zsh
-   cp -r dist/* ../static/
+   cd ../..
+   cp -r cities/frontend/dist/* static/
    ```
 
 ## Run the Development Server
@@ -68,6 +69,14 @@ Make sure you have the following installed:
 ## Troubleshooting
 
 - Sometimes, Django’s static files cache can cause issues. Clear the cache by running this in the root:
+
   ```zsh
   python manage.py collectstatic --noinput
   ```
+
+- Clearing your browser cache and rebuild the Vue.js project to ensure no cached versions of the old code are being used:
+
+  - In Chrome: Go to Settings > Privacy and Security > Clear browsing data
+
+- If you suspect caching issues, you can force a hard refresh in your browser:
+  - In Chrome: Cmd + Shift + R (Mac) or Press Ctrl + F5 on (Win)
