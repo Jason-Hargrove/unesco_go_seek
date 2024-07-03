@@ -20,8 +20,15 @@ export default {
   },
   methods: {
     async fetchRandomCity() {
-      const response = await fetch('/cities/random/')
-      this.city = await response.json()
+      try {
+        const response = await fetch('/random/')
+        if (!response.ok) {
+          throw new Error('Network response was not ok')
+        }
+        this.city = await response.json()
+      } catch (error) {
+        console.error('Error fetching random city:', error)
+      }
     },
   },
 }

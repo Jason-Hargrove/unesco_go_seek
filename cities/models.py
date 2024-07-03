@@ -1,6 +1,5 @@
 from django.db import models
 
-# Define the City model
 class City(models.Model):
     name = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
