@@ -2,6 +2,8 @@
 
 UNESCO-Go-Seek is a web application that suggests random UNESCO cities to visit. The project uses Django for the backend and Vue.js with Bootstrap for the frontend.
 
+![Screenshot](images/unesco-go-seek-00.jpg)
+
 ## Technologies Used
 
 - Python 3.x
