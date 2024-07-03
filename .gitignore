@@ -18,28 +18,31 @@ venv.bak/
 __pycache__/
 local_settings.py
 db.sqlite3
-media
+media/
 
 # Node
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Vue.js
-dist/
+cities/frontend/dist/
+cities/frontend/node_modules/
 
 # VS Code
 .vscode/
 
 # Django Static and Media Files
 staticfiles/
+static/
 media/
 
 # Environment Variables
 .env
+.env.local
+.env.*.local
 
 # macOS
 .DS_Store
-
-# JetBrains
-.idea/
