@@ -68,6 +68,14 @@ Make sure you have the following installed:
 
 2. Open your web browser and go to `http://127.0.0.1:8000/`
 
+## Notes:
+
+- Run Migrations on Heroku
+
+  ```zsh
+  heroku run python manage.py migrate
+  ```
+
 ## Troubleshooting
 
 - Sometimes, Django’s static files cache can cause issues. Clear the cache by running this in the root:
