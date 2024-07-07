@@ -2,5 +2,9 @@
   "name": "root",
   "scripts": {
     "heroku-postbuild": "cd cities/frontend && npm install && npm run build && cp -r dist/* ../../../static/"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
   }
 }
