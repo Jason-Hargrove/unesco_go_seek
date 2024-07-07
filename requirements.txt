@@ -6,3 +6,4 @@ packaging==24.1
 sqlparse==0.5.0
 typing-extensions==4.12.2
 whitenoise==6.7.0
+dj_database_url>=0.5.0
