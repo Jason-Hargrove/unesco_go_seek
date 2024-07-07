@@ -52,10 +52,9 @@ Make sure you have the following installed:
    npm run build
    ```
 
-3. Copy the Build Files to the "static" Folder in the Root Directory:
+3. Copy the Build Files to the "static" Folder From the frontend Directory:
    ```zsh
-   cd ../..
-   cp -r cities/frontend/dist/* static/
+   cp -r dist/* ~/Documents/code/projects/unesco_go_seek/static/
    ```
 
 ## Run the Development Server
