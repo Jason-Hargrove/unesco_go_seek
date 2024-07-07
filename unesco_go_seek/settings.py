@@ -24,13 +24,13 @@ SECRET_KEY = "django-insecure-zleb5m=#y^b!90ej0&lx(o+-azc6t)h@_+%b7jh1ss=5e%j6oi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# For testing purposes, you can use this (not recommended for production):
-# ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = [
     "localhost", 
     "127.0.0.1",
     "unesco-go-seek-fd9ceca95862.herokuapp.com"
 ]
+
+# Application definition
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "cities",
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
