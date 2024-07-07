@@ -74,7 +74,22 @@ Make sure you have the following installed:
 - Verify the collectstatic command runs without warnings or errors.
 - Check Heroku logs for any issues related to static files.
 
-## Notes:
+## Heroku
+
+- Collect Static Files
+
+  ```zsh
+  heroku run python manage.py collectstatic --noinput
+
+  ```
+
+- Push
+
+  ```zsh
+  git add .
+  git commit -m "My message"
+  git push heroku main
+  ```
 
 - Run Migrations on Heroku
 
@@ -86,15 +101,6 @@ Make sure you have the following installed:
 
   ```zsh
   heroku run python manage.py showmigrations
-  ```
-
-- Run the collectstatic command locally and commit the changes to make sure the static files are collected and pushed to Heroku.
-
-  ```zsh
-  python manage.py collectstatic --noinput
-  git add staticfiles
-  git commit -m "Collect static files"
-  git push heroku main
   ```
 
 ## Troubleshooting
