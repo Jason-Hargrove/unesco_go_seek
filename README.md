@@ -76,6 +76,15 @@ Make sure you have the following installed:
   heroku run python manage.py migrate
   ```
 
+- Run the collectstatic command locally and commit the changes to make sure the static files are collected and pushed to Heroku.
+
+  ```zsh
+  python manage.py collectstatic --noinput
+  git add staticfiles
+  git commit -m "Collect static files"
+  git push heroku main
+  ```
+
 ## Troubleshooting
 
 - Sometimes, Django’s static files cache can cause issues. Clear the cache by running this in the root:
