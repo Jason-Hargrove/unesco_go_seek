@@ -36,7 +36,6 @@ cities/frontend/node_modules/
 
 # Django Static and Media Files
 staticfiles/
-static/
 media/
 
 # Environment Variables

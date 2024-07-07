@@ -67,6 +67,13 @@ Make sure you have the following installed:
 
 2. Open your web browser and go to `http://127.0.0.1:8000/`
 
+## Deployment Checklist
+
+- Ensure the dist folder is correctly built and contains the required files.
+- Confirm the static folder in the root directory has the files copied from the dist folder.
+- Verify the collectstatic command runs without warnings or errors.
+- Check Heroku logs for any issues related to static files.
+
 ## Notes:
 
 - Run Migrations on Heroku
