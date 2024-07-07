@@ -82,6 +82,12 @@ Make sure you have the following installed:
   heroku run python manage.py migrate
   ```
 
+- After running the migrations, you can check it:
+
+  ```zsh
+  heroku run python manage.py showmigrations
+  ```
+
 - Run the collectstatic command locally and commit the changes to make sure the static files are collected and pushed to Heroku.
 
   ```zsh
