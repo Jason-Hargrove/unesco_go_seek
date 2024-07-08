@@ -80,7 +80,6 @@ Make sure you have the following installed:
 
   ```zsh
   heroku run python manage.py collectstatic --noinput
-
   ```
 
 - Push
@@ -101,6 +100,21 @@ Make sure you have the following installed:
 
   ```zsh
   heroku run python manage.py showmigrations
+  ```
+
+## PSQL
+
+- List All Tables
+
+  ```zsh
+  heroku login
+  heroku pg:psql -a unesco-go-seek
+  ```
+
+- List All Tables
+
+  ```sql
+  \dt
   ```
 
 ## Troubleshooting
