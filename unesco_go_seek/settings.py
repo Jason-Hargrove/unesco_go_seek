@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -62,14 +63,7 @@ WSGI_APPLICATION = "unesco_go_seek.wsgi.application"
 
 if os.environ.get('ENV') == 'PRODUCTION':
     DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.environ.get('DB_NAME', 'your_db_name'),
-            "USER": os.environ.get('DB_USER', 'your_db_user'),
-            "PASSWORD": os.environ.get('DB_PASSWORD', 'your_db_password'),
-            "HOST": os.environ.get('DB_HOST', 'localhost'),
-            "PORT": os.environ.get('DB_PORT', '5432'),
-        }
+        'default': dj_database_url.config(conn_max_age=600)
     }
 else:
     DATABASES = {

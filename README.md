@@ -141,10 +141,19 @@ Make sure you have the following installed:
 
 ## Steps for Updating and Deploying
 
-1. Commit Changes
-2. Push Changes to Heroku
-3. Run Migrations
-4. Verify Tables
+1. python load_data.py
+2. Commit Changes
+3. Push Changes to Heroku
+4. Run Migrations on Heroku
+5. Load Data on Heroku
+6. Collect Static Files
+7. Restart the Heroku App (optional)
+
+   ```zsh
+   heroku restart --app unesco-go-seek
+   ```
+
+8. Verify Tables
 
 ## Troubleshooting
 
