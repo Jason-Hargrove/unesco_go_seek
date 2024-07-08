@@ -22,16 +22,32 @@ Make sure you have the following installed:
 - Node.js and npm
 - Vue CLI
 
+## Install Dependencies
+
+1. Install Python dependencies:
+
+   ```zsh
+    pip install -r requirements.txt
+   ```
+
+2. Install Node.js dependencies:
+   ```zsh
+    cd cities/frontend
+    npm install
+    cd ../..
+   ```
+
 ## Create and Apply Migrations:
 
 1.  ```zsh
     python manage.py makemigrations
     ```
+
 2.  ```zsh
     python manage.py migrate
     ```
 
-    #### Run the Script:
+    #### Run and Load the Script Data:
 
 3.  ```zsh
     python load_data.py
@@ -82,12 +98,18 @@ Make sure you have the following installed:
   heroku run python manage.py collectstatic --noinput
   ```
 
-- Push
+- Push to Heroku
 
   ```zsh
   git add .
   git commit -m "My message"
   git push heroku main
+  ```
+
+- Run the Management Command on Heroku
+
+  ```zsh
+  heroku run python manage.py load_cities --app unesco-go-seek
   ```
 
 - Run Migrations on Heroku
