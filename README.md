@@ -4,6 +4,11 @@ UNESCO-Go-Seek is a web application that suggests random UNESCO cities to visit.
 
 ![Screenshot](images/unesco-go-seek-00.jpg)
 
+## Links to Work
+
+- Repo: [https://github.com/Jason-Hargrove/unesco_go_seek.git](https://github.com/Jason-Hargrove/unesco_go_seek.git)
+- App: [https://unesco-go-seek-fd9ceca95862.herokuapp.com/](https://unesco-go-seek-fd9ceca95862.herokuapp.com/)
+
 ## Technologies Used
 
 - Python 3.x
