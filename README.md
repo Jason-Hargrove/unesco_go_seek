@@ -93,7 +93,7 @@ Make sure you have the following installed:
 - Run Migrations on Heroku
 
   ```zsh
-  heroku run python manage.py migrate
+  heroku run python manage.py migrate --app unesco-go-seek
   ```
 
 - After running the migrations, you can check it:
@@ -104,11 +104,11 @@ Make sure you have the following installed:
 
 ## PSQL
 
-- List All Tables
+- Verify Tables
 
   ```zsh
   heroku login
-  heroku pg:psql -a unesco-go-seek
+  heroku pg:psql --app unesco-go-seek
   ```
 
 - List All Tables
@@ -116,6 +116,13 @@ Make sure you have the following installed:
   ```sql
   \dt
   ```
+
+## Steps for Updating and Deploying
+
+1. Commit Changes
+2. Push Changes to Heroku
+3. Run Migrations
+4. Verify Tables
 
 ## Troubleshooting
 
@@ -130,4 +137,10 @@ Make sure you have the following installed:
   - In Chrome: Go to Settings > Privacy and Security > Clear browsing data
 
 - If you suspect caching issues, you can force a hard refresh in your browser:
+
   - In Chrome: Cmd + Shift + R (Mac) or Press Ctrl + F5 on (Win)
+
+- view the latest logs from Heroku
+  ```zsh
+    heroku logs --tail --app unesco-go-seek
+  ```
